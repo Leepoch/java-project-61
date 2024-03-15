@@ -1,2 +1,15 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Leepoch/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Leepoch/java-project-61/actions)
+# brain-games 
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/23c2d607128c6da083ec/maintainability)](https://codeclimate.com/github/Leepoch/java-project-61/maintainability)
+
+## Start
+
+```bash
+make build
+```
+
+## Run
+
+```bash
+make run
+```
