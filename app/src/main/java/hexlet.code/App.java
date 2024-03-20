@@ -19,7 +19,7 @@ public class App {
                 Cli.greeting();
                 break;
             case 2:
-                System.out.println(Even.gameEven());
+                System.out.println(Even.gameEven());;
                 break;
             case 0:
 
