@@ -20,3 +20,6 @@ make run-dist
 ## Game Calc
 [![asciicast](https://asciinema.org/a/bFh8LmnVe7Vs0J7whBOzM71tR.svg)](https://asciinema.org/a/bFh8LmnVe7Vs0J7whBOzM71tR)
 
+## Game GCD
+[![asciicast](https://asciinema.org/a/H76BP49ALy4kUPJpYin8U6t9G.svg)](https://asciinema.org/a/H76BP49ALy4kUPJpYin8U6t9G)
+

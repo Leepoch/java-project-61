@@ -9,8 +9,8 @@ public class GCD {
         String[][] gameData = new String[3][2];
 
         for (var i = 0; i < 3; i++) {
-            var firstNum = random.nextInt(51);
-            var secondNum = random.nextInt(51);
+            var firstNum = random.nextInt(50) + 1;
+            var secondNum = random.nextInt(50) + 1;
             var greatesCommon = 0;
             for (var common = 1; common < firstNum + secondNum; common++) {
                 if (firstNum % common == 0 && secondNum % common == 0) {
