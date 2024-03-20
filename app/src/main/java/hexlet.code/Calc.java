@@ -3,7 +3,7 @@ package hexlet.code;
 import java.util.Random;
 
 public class Calc {
-    public static String gameCalc() {
+    public static String game() {
         var condition = "What is the result of the expression?";
         Random random = new Random();
         String[][] gameData = new String[3][2];

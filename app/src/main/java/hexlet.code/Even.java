@@ -3,7 +3,7 @@ package hexlet.code;
 import java.util.Random;
 
 public class Even {
-    public static String gameEven() {
+    public static String game() {
         var condition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         Random random = new Random();
         String[][] gameData = new String[3][2];

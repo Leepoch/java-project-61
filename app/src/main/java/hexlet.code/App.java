@@ -11,6 +11,7 @@ public class App {
                 1 - Greet
                 2 - Even
                 3 - Calc
+                4 - GCD
                 0 - Exit""");
         var selectedGame = scanner.nextInt();
         System.out.println("Your choice: " +  selectedGame);
@@ -20,10 +21,12 @@ public class App {
                 Cli.greeting();
                 break;
             case 2:
-                System.out.println(Even.gameEven());;
+                System.out.println(Even.game());;
                 break;
             case 3:
-                System.out.println(Calc.gameCalc());
+                System.out.println(Calc.game());
+            case 4:
+                System.out.println(GCD.game());
             case 0:
 
         }
