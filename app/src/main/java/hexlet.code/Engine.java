@@ -19,9 +19,9 @@ public class Engine {
                 System.out.println("Correct!");
             } else {
                 return "'" + answer + "' is wrong answer ;(. Correct answer was '" +
-                        correctAnswer + ".\nLet's try again, Sam!";
+                        correctAnswer + "'.\nLet's try again, " + name + "!";
             }
         }
-        return "Congratulations, Sam!";
+        return "Congratulations, " + name + "!";
     }
 }

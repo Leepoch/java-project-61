@@ -10,6 +10,7 @@ public class App {
                 Please enter the game number and press Enter.
                 1 - Greet
                 2 - Even
+                3 - Calc
                 0 - Exit""");
         var selectedGame = scanner.nextInt();
         System.out.println("Your choice: " +  selectedGame);
@@ -21,6 +22,8 @@ public class App {
             case 2:
                 System.out.println(Even.gameEven());;
                 break;
+            case 3:
+                System.out.println(Calc.gameCalc());
             case 0:
 
         }
