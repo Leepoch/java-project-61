@@ -13,6 +13,7 @@ public class App {
                 3 - Calc
                 4 - GCD
                 5 - Progression
+                6 - Prime
                 0 - Exit""");
         var selectedGame = scanner.nextInt();
         System.out.println("Your choice: " +  selectedGame);
@@ -26,12 +27,17 @@ public class App {
                 break;
             case 3:
                 System.out.println(Calc.game());
+                break;
             case 4:
                 System.out.println(GCD.game());
+                break;
             case 5:
                 System.out.println(Progression.game());
+                break;
+            case 6:
+                System.out.println(Prime.game());
             case 0:
-
+                break;
         }
     }
 }

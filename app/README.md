@@ -26,3 +26,6 @@ make run-dist
 ## Game Progression
 [![asciicast](https://asciinema.org/a/7XwKPYLlCrJBsXSQeSBhAwBfq.svg)](https://asciinema.org/a/7XwKPYLlCrJBsXSQeSBhAwBfq)
 
+## Game Prime
+[![asciicast](https://asciinema.org/a/uoXp3yeDwmEg74CXCBzKwFouG.svg)](https://asciinema.org/a/uoXp3yeDwmEg74CXCBzKwFouG)
+
