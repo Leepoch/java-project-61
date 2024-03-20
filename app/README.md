@@ -23,3 +23,6 @@ make run-dist
 ## Game GCD
 [![asciicast](https://asciinema.org/a/H76BP49ALy4kUPJpYin8U6t9G.svg)](https://asciinema.org/a/H76BP49ALy4kUPJpYin8U6t9G)
 
+## Game Progression
+[![asciicast](https://asciinema.org/a/7XwKPYLlCrJBsXSQeSBhAwBfq.svg)](https://asciinema.org/a/7XwKPYLlCrJBsXSQeSBhAwBfq)
+
