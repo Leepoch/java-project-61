@@ -4,16 +4,20 @@ import java.util.Random;
 import java.util.StringJoiner;
 
 public class Progression {
-    public static String game() {
+    public static String game(int numberOfLevels) {
         var condition = "What number is missing in the progression?";
         Random random = new Random();
-        String[][] gameData = new String[3][2];
+        String[][] gameData = new String[numberOfLevels][2];
 
-        for (var i = 0; i < 3; i++) {
-            var progressionSize = random.nextInt(6) + 5;
+        for (var i = 0; i < numberOfLevels; i++) {
+            var maxProgressionSize = 6;
+            var minProgressionSize = 5;
+            var maxStepProgression = 10;
+            var maxItemProgression = 21;
+            var progressionSize = random.nextInt(maxProgressionSize) + minProgressionSize;
             var indexMissingNumber = random.nextInt(progressionSize);
-            var stepProgression = random.nextInt(10) + 1;
-            var itemProgression = random.nextInt(21);
+            var stepProgression = random.nextInt(maxStepProgression) + 1;
+            var itemProgression = random.nextInt(maxItemProgression);
             var missingNumber = 0;
             StringJoiner stringProgression = new StringJoiner(" ");
             for (var index = 0; index < progressionSize; index++) {

@@ -3,15 +3,17 @@ package hexlet.code;
 import java.util.Random;
 
 public class Calc {
-    public static String game() {
+    public static String game(int numberOfLevels) {
         var condition = "What is the result of the expression?";
         Random random = new Random();
-        String[][] gameData = new String[3][2];
+        String[][] gameData = new String[numberOfLevels][2];
 
-        for (var i = 0; i < 3; i++) {
-            var indexOperator = random.nextInt(3);
-            var firstOperand = random.nextInt(21);
-            var secondOperand = random.nextInt(21);
+        for (var i = 0; i < numberOfLevels; i++) {
+            var numberOfOperators = 3;
+            var maxNumberValue = 21;
+            var indexOperator = random.nextInt(numberOfOperators);
+            var firstOperand = random.nextInt(maxNumberValue);
+            var secondOperand = random.nextInt(maxNumberValue);
             switch (indexOperator) {
                 case 0:
                     gameData[i][1] = Integer.toString(firstOperand + secondOperand);

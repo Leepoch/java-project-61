@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        var numberOfLevels = 3;
 
         System.out.println("""
                 Please enter the game number and press Enter.
@@ -23,19 +24,19 @@ public class App {
                 Cli.greeting();
                 break;
             case 2:
-                System.out.println(Even.game());;
+                System.out.println(Even.game(numberOfLevels));
                 break;
             case 3:
-                System.out.println(Calc.game());
+                System.out.println(Calc.game(numberOfLevels));
                 break;
             case 4:
-                System.out.println(GCD.game());
+                System.out.println(GCD.game(numberOfLevels));
                 break;
             case 5:
-                System.out.println(Progression.game());
+                System.out.println(Progression.game(numberOfLevels));
                 break;
             case 6:
-                System.out.println(Prime.game());
+                System.out.println(Prime.game(numberOfLevels));
             case 0:
                 break;
             default:

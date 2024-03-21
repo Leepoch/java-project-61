@@ -3,14 +3,15 @@ package hexlet.code;
 import java.util.Random;
 
 public class GCD {
-    public static String game() {
+    public static String game(int numberOfLevels) {
         var condition = "Find the greatest common divisor of given numbers.";
         Random random = new Random();
-        String[][] gameData = new String[3][2];
+        String[][] gameData = new String[numberOfLevels][2];
 
-        for (var i = 0; i < 3; i++) {
-            var firstNum = random.nextInt(50) + 1;
-            var secondNum = random.nextInt(50) + 1;
+        for (var i = 0; i < numberOfLevels; i++) {
+            var maxNumberValue = 50;
+            var firstNum = random.nextInt(maxNumberValue) + 1;
+            var secondNum = random.nextInt(maxNumberValue) + 1;
             var greatesCommon = 0;
             for (var common = 1; common < firstNum + secondNum; common++) {
                 if (firstNum % common == 0 && secondNum % common == 0) {
