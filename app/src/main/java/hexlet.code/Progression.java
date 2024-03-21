@@ -11,7 +11,7 @@ public class Progression {
 
         for (var i = 0; i < 3; i++) {
             var progressionSize = random.nextInt(6) + 5;
-            var indexMissingNumber = random.nextInt(progressionSize) - 1;
+            var indexMissingNumber = random.nextInt(progressionSize);
             var stepProgression = random.nextInt(10) + 1;
             var itemProgression = random.nextInt(21);
             var missingNumber = 0;
