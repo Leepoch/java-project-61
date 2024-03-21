@@ -5,14 +5,15 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calc {
+    private static final int numberOfOperators = 3;
+    private static final int maxNumberValue = 21;
+
     public static String game(int numberOfLevels) {
         var condition = "What is the result of the expression?";
         Random random = new Random();
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {
-            var numberOfOperators = 3;
-            var maxNumberValue = 21;
             var indexOperator = random.nextInt(numberOfOperators);
             var firstOperand = random.nextInt(maxNumberValue);
             var secondOperand = random.nextInt(maxNumberValue);

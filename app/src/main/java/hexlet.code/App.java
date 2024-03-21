@@ -9,9 +9,10 @@ import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 public class App {
+    public static int numberOfLevels = 3;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        var numberOfLevels = 3;
 
         System.out.println("""
                 Please enter the game number and press Enter.
