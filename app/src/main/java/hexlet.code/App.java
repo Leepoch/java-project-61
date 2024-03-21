@@ -25,30 +25,30 @@ public class App {
                 0 - Exit""");
         var selectedGame = scanner.nextInt();
         System.out.println("Your choice: " +  selectedGame);
-        final int GREET = 1;
-        final int EVEN = 2;
-        final int CALC = 3;
-        final int GCD = 4;
-        final int PROGRESSION = 5;
-        final int PRIME = 6;
+        final int greet = 1;
+        final int even = 2;
+        final int calc = 3;
+        final int gcd = 4;
+        final int progression = 5;
+        final int prime = 6;
 
         switch (selectedGame) {
-            case GREET:
+            case greet:
                 Cli.greeting();
                 break;
-            case EVEN:
+            case even:
                 System.out.println(Even.game(NUMBER_OF_LEVELS));
                 break;
-            case CALC:
+            case calc:
                 System.out.println(Calc.game(NUMBER_OF_LEVELS));
                 break;
-            case GCD:
+            case gcd:
                 System.out.println(Gcd.game(NUMBER_OF_LEVELS));
                 break;
-            case PROGRESSION:
+            case progression:
                 System.out.println(Progression.game(NUMBER_OF_LEVELS));
                 break;
-            case PRIME:
+            case prime:
                 System.out.println(Prime.game(NUMBER_OF_LEVELS));
             case 0:
                 break;
