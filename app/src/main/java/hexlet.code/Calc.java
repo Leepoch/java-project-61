@@ -24,6 +24,8 @@ public class Calc {
                 case 2:
                     gameData[i][1] = Integer.toString(firstOperand * secondOperand);
                     gameData[i][0] = firstOperand + " * " + secondOperand;
+                default:
+                    break;
             }
         }
         return Engine.source(condition, gameData);

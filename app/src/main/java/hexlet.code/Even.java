@@ -8,7 +8,7 @@ public class Even {
         Random random = new Random();
         String[][] gameData = new String[3][2];
 
-        for (var i = 0; i < 3; i ++) {
+        for (var i = 0; i < 3; i++) {
             var question = random.nextInt(21);
             String correctAnswer = question % 2 == 0 ? "yes" : "no";
             gameData[i][0] = Integer.toString(question);

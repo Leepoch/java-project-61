@@ -38,6 +38,9 @@ public class App {
                 System.out.println(Prime.game());
             case 0:
                 break;
+            default:
+                System.out.println("Не правильный номер игры");
+                break;
         }
     }
 }

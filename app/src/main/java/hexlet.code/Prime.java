@@ -8,7 +8,7 @@ public class Prime {
         Random random = new Random();
         String[][] gameData = new String[3][2];
 
-        for (var i = 0; i < 3; i ++) {
+        for (var i = 0; i < 3; i++) {
             var primeNumber = random.nextInt(24) + 1;
             var isPrime = true;
             for (var divisor = 1; divisor <= primeNumber; divisor++) {
