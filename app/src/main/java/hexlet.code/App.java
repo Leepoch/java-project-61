@@ -2,14 +2,14 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
-import hexlet.code.games.GCD;
+import hexlet.code.games.Gcd;
 import hexlet.code.games.Prime;
 import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
 public class App {
-    public static final int NUMBER_OF_LEVELS = 3;
+    private static final int NUMBER_OF_LEVELS = 3;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -25,24 +25,30 @@ public class App {
                 0 - Exit""");
         var selectedGame = scanner.nextInt();
         System.out.println("Your choice: " +  selectedGame);
+        final int GREET = 1;
+        final int EVEN = 2;
+        final int CALC = 3;
+        final int GCD = 4;
+        final int PROGRESSION = 5;
+        final int PRIME = 6;
 
         switch (selectedGame) {
-            case 1:
+            case GREET:
                 Cli.greeting();
                 break;
-            case 2:
+            case EVEN:
                 System.out.println(Even.game(NUMBER_OF_LEVELS));
                 break;
-            case 3:
+            case CALC:
                 System.out.println(Calc.game(NUMBER_OF_LEVELS));
                 break;
-            case 4:
-                System.out.println(GCD.game(NUMBER_OF_LEVELS));
+            case GCD:
+                System.out.println(Gcd.game(NUMBER_OF_LEVELS));
                 break;
-            case 5:
+            case PROGRESSION:
                 System.out.println(Progression.game(NUMBER_OF_LEVELS));
                 break;
-            case 6:
+            case PRIME:
                 System.out.println(Prime.game(NUMBER_OF_LEVELS));
             case 0:
                 break;

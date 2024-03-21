@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 
 import java.util.Random;
 
-public class GCD {
+public class Gcd {
     public static final int MAX_NUMBER_VALUE = 50;
 
     public static String game(int numberOfLevels) {
