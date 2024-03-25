@@ -11,9 +11,10 @@ public class Progression {
     public static final int MAX_STEP_PROGRESSION = 10;
     public static final int MAX_ITEM_PROGRESSION = 21;
 
-    public static void game(int numberOfLevels) {
+    public static void game() {
         var condition = "What number is missing in the progression?";
         Random random = new Random();
+        var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {

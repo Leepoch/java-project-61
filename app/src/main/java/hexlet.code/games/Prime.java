@@ -7,9 +7,10 @@ import java.util.Random;
 public class Prime {
     public static final int MAX_NUMBER_VALUE = 24;
 
-    public static void game(int numberOfLevels) {
+    public static void game() {
         var condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         Random random = new Random();
+        var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {

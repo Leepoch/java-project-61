@@ -9,8 +9,6 @@ import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 public class App {
-    private static final int NUMBER_OF_LEVELS = 3;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,19 +35,19 @@ public class App {
                 Cli.greeting();
                 break;
             case even:
-                Even.game(NUMBER_OF_LEVELS);
+                Even.game();
                 break;
             case calc:
-                Calc.game(NUMBER_OF_LEVELS);
+                Calc.game();
                 break;
             case gcd:
-                Gcd.game(NUMBER_OF_LEVELS);
+                Gcd.game();
                 break;
             case progression:
-                Progression.game(NUMBER_OF_LEVELS);
+                Progression.game();
                 break;
             case prime:
-                Prime.game(NUMBER_OF_LEVELS);
+                Prime.game();
             case 0:
                 break;
             default:

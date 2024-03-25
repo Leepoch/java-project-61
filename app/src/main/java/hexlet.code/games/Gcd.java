@@ -7,9 +7,10 @@ import java.util.Random;
 public class Gcd {
     public static final int MAX_NUMBER_VALUE = 50;
 
-    public static void game(int numberOfLevels) {
+    public static void game() {
         var condition = "Find the greatest common divisor of given numbers.";
         Random random = new Random();
+        var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {

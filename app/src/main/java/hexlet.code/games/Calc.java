@@ -8,11 +8,11 @@ public class Calc {
     private static final int NUMBER_OF_OPERATORS = 3;
     private static final int MAX_NUMBER_VALUE = 21;
 
-    public static void game(int numberOfLevels) {
+    public static void game() {
         var condition = "What is the result of the expression?";
         Random random = new Random();
+        var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
-
         for (var i = 0; i < numberOfLevels; i++) {
             var indexOperator = random.nextInt(NUMBER_OF_OPERATORS);
             var firstOperand = random.nextInt(MAX_NUMBER_VALUE);

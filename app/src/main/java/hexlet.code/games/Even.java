@@ -7,9 +7,10 @@ import java.util.Random;
 public class Even {
     public static final int MAX_NUMBER_VALUE = 21;
 
-    public static void game(int numberOfLevels) {
+    public static void game() {
         var condition = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         Random random = new Random();
+        var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {

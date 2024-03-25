@@ -3,6 +3,8 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
+    public static final int NUMBER_OF_LEVELS = 3;
+
     public static String source(String condition, String[][] gameData) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!");
