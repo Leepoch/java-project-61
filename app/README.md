@@ -1,10 +1,19 @@
-# brain-games 
+# Brain-games 
 
+[![hexlet-check](https://github.com/Leepoch/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Leepoch/java-project-61/actions/workflows/hexlet-check.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/23c2d607128c6da083ec/maintainability)](https://codeclimate.com/github/Leepoch/java-project-61/maintainability)
 
-## Build
+***
+### This project consists of 5 math games, each with 3 rounds.
+### The game can be selected at the start of the program.
+***
+
+
+## To start
 
 ```bash
+git clone git@github.com:Leepoch/frontend-project-lvl1.git
+
 make build
 ```
 
