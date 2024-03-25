@@ -7,7 +7,7 @@ import java.util.Random;
 public class Prime {
     public static final int MAX_NUMBER_VALUE = 24;
 
-    public static String game(int numberOfLevels) {
+    public static void game(int numberOfLevels) {
         var condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         Random random = new Random();
         String[][] gameData = new String[numberOfLevels][2];
@@ -23,6 +23,6 @@ public class Prime {
             gameData[i][0] = Integer.toString(primeNumber);
             gameData[i][1] = isPrime ? "yes" : "no";
         }
-        return Engine.source(condition, gameData);
+        System.out.println(Engine.source(condition, gameData));
     }
 }

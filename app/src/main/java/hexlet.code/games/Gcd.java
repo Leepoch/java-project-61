@@ -7,7 +7,7 @@ import java.util.Random;
 public class Gcd {
     public static final int MAX_NUMBER_VALUE = 50;
 
-    public static String game(int numberOfLevels) {
+    public static void game(int numberOfLevels) {
         var condition = "Find the greatest common divisor of given numbers.";
         Random random = new Random();
         String[][] gameData = new String[numberOfLevels][2];
@@ -24,6 +24,6 @@ public class Gcd {
             gameData[i][0] = firstNum + " " + secondNum;
             gameData[i][1] = Integer.toString(greatesCommon);
         }
-        return Engine.source(condition, gameData);
+        System.out.println(Engine.source(condition, gameData));
     }
 }

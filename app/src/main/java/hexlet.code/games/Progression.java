@@ -11,7 +11,7 @@ public class Progression {
     public static final int MAX_STEP_PROGRESSION = 10;
     public static final int MAX_ITEM_PROGRESSION = 21;
 
-    public static String game(int numberOfLevels) {
+    public static void game(int numberOfLevels) {
         var condition = "What number is missing in the progression?";
         Random random = new Random();
         String[][] gameData = new String[numberOfLevels][2];
@@ -35,6 +35,6 @@ public class Progression {
             gameData[i][0] = stringProgression.toString();
             gameData[i][1] = Integer.toString(missingNumber);
         }
-        return Engine.source(condition, gameData);
+        System.out.println(Engine.source(condition, gameData));
     }
 }

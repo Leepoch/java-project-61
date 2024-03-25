@@ -8,7 +8,7 @@ public class Calc {
     private static final int NUMBER_OF_OPERATORS = 3;
     private static final int MAX_NUMBER_VALUE = 21;
 
-    public static String game(int numberOfLevels) {
+    public static void game(int numberOfLevels) {
         var condition = "What is the result of the expression?";
         Random random = new Random();
         String[][] gameData = new String[numberOfLevels][2];
@@ -33,6 +33,6 @@ public class Calc {
                     break;
             }
         }
-        return Engine.source(condition, gameData);
+        System.out.println(Engine.source(condition, gameData));
     }
 }

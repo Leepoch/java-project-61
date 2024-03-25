@@ -37,19 +37,19 @@ public class App {
                 Cli.greeting();
                 break;
             case even:
-                System.out.println(Even.game(NUMBER_OF_LEVELS));
+                Even.game(NUMBER_OF_LEVELS);
                 break;
             case calc:
-                System.out.println(Calc.game(NUMBER_OF_LEVELS));
+                Calc.game(NUMBER_OF_LEVELS);
                 break;
             case gcd:
-                System.out.println(Gcd.game(NUMBER_OF_LEVELS));
+                Gcd.game(NUMBER_OF_LEVELS);
                 break;
             case progression:
-                System.out.println(Progression.game(NUMBER_OF_LEVELS));
+                Progression.game(NUMBER_OF_LEVELS);
                 break;
             case prime:
-                System.out.println(Prime.game(NUMBER_OF_LEVELS));
+                Prime.game(NUMBER_OF_LEVELS);
             case 0:
                 break;
             default:
