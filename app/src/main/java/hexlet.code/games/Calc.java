@@ -1,8 +1,9 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
-import java.util.Random;
+
 
 public class Calc {
     private static final int NUMBER_OF_OPERATORS = 3;
@@ -10,13 +11,12 @@ public class Calc {
 
     public static void game() {
         var condition = "What is the result of the expression?";
-        Random random = new Random();
         var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
         for (var i = 0; i < numberOfLevels; i++) {
-            var indexOperator = random.nextInt(NUMBER_OF_OPERATORS);
-            var firstOperand = random.nextInt(MAX_NUMBER_VALUE);
-            var secondOperand = random.nextInt(MAX_NUMBER_VALUE);
+            var indexOperator = Utils.getRandomNum(NUMBER_OF_OPERATORS);
+            var firstOperand = Utils.getRandomNum(MAX_NUMBER_VALUE);
+            var secondOperand = Utils.getRandomNum(MAX_NUMBER_VALUE);
             switch (indexOperator) {
                 case 0:
                     gameData[i][1] = Integer.toString(firstOperand + secondOperand);

@@ -1,8 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
+import hexlet.code.Utils;
 import java.util.StringJoiner;
 
 public class Progression {
@@ -13,15 +12,14 @@ public class Progression {
 
     public static void game() {
         var condition = "What number is missing in the progression?";
-        Random random = new Random();
         var numberOfLevels = Engine.NUMBER_OF_LEVELS;
         String[][] gameData = new String[numberOfLevels][2];
 
         for (var i = 0; i < numberOfLevels; i++) {
-            var progressionSize = random.nextInt(MAX_PROGRESSION_SIZE) + MIN_PROGRESSION_SIZE;
-            var indexMissingNumber = random.nextInt(progressionSize);
-            var stepProgression = random.nextInt(MAX_STEP_PROGRESSION) + 1;
-            var itemProgression = random.nextInt(MAX_ITEM_PROGRESSION);
+            var progressionSize = Utils.getRandomNum(MAX_PROGRESSION_SIZE, MIN_PROGRESSION_SIZE);
+            var indexMissingNumber = Utils.getRandomNum(progressionSize);
+            var stepProgression = Utils.getRandomNum(MAX_STEP_PROGRESSION) + 1;
+            var itemProgression = Utils.getRandomNum(MAX_ITEM_PROGRESSION);
             var missingNumber = 0;
             StringJoiner stringProgression = new StringJoiner(" ");
             for (var index = 0; index < progressionSize; index++) {
