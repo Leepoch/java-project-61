@@ -37,7 +37,7 @@ public class Calc {
             var secondOperand = Utils.getRandomNum(MAX_NUMBER_VALUE);
             var correctAnswer = gameData(firstOperand, secondOperand, operators[indexOperator]);
             gameData[i][1] = Integer.toString(correctAnswer);
-            gameData[i][0] = firstOperand + operators[indexOperator] + secondOperand;
+            gameData[i][0] = firstOperand + " " + operators[indexOperator]+ " " + secondOperand;
         }
         return gameData;
     }
