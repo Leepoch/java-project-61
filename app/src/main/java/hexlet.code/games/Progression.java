@@ -10,7 +10,10 @@ public class Progression {
     public static final int MAX_STEP_PROGRESSION = 10;
     public static final int MAX_ITEM_PROGRESSION = 21;
 
-    public static String[] gameData(int progressionSize, int indexMissingNumber, int stepProgression, int itemProgression) {
+    public static String[] gameData(int progressionSize,
+                                    int indexMissingNumber,
+                                    int stepProgression,
+                                    int itemProgression) {
         var missingNumber = 0;
         var progressionAndMissingNum = new String[2];
         StringJoiner stringProgression = new StringJoiner(" ");

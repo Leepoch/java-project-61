@@ -9,7 +9,7 @@ public class Calc {
     private static final int NUMBER_OF_OPERATORS = 3;
     private static final int MAX_NUMBER_VALUE = 21;
 
-    public static int gameData(int firstOperand,int secondOperand,String operator) {
+    public static int gameData(int firstOperand, int secondOperand, String operator) {
         var result = 0;
         switch (operator) {
             case "+":
@@ -37,7 +37,7 @@ public class Calc {
             var secondOperand = Utils.getRandomNum(MAX_NUMBER_VALUE);
             var correctAnswer = gameData(firstOperand, secondOperand, operators[indexOperator]);
             gameData[i][1] = Integer.toString(correctAnswer);
-            gameData[i][0] = firstOperand + " " + operators[indexOperator]+ " " + secondOperand;
+            gameData[i][0] = firstOperand + " " + operators[indexOperator] + " " + secondOperand;
         }
         return gameData;
     }
