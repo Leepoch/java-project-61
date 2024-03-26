@@ -6,6 +6,17 @@ import hexlet.code.Utils;
 public class Prime {
     public static final int MAX_NUMBER_VALUE = 24;
 
+//    public static int gameData() {
+//
+//    }
+//    public static String[][] prepareData() {
+//
+//
+//        for (var i = 0; i < numberOfLevels; i++) {
+//
+//        }
+//        return gameData;
+//    }
     public static void game() {
         var condition = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         var numberOfLevels = Engine.NUMBER_OF_LEVELS;
