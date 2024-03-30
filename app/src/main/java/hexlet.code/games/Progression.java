@@ -2,33 +2,24 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import hexlet.code.Utils;
+
+import java.util.Arrays;
 import java.util.StringJoiner;
 
 public class Progression {
     public static final int MAX_PROGRESSION_SIZE = 6;
     public static final int MIN_PROGRESSION_SIZE = 5;
     public static final int MAX_STEP_PROGRESSION = 10;
+    public static final int MIN_STEP_PROGRESSION = 1;
     public static final int MAX_ITEM_PROGRESSION = 21;
 
-    public static String[] gameData(int progressionSize,
-                                    int indexMissingNumber,
-                                    int stepProgression,
-                                    int itemProgression) {
-        var missingNumber = 0;
-        var progressionAndMissingNum = new String[2];
+    public static String getProgression(int progressionSize, int stepProgression, int itemProgression) {
         StringJoiner stringProgression = new StringJoiner(" ");
         for (var index = 0; index < progressionSize; index++) {
-            if (index == indexMissingNumber) {
-                stringProgression.add("..");
-                missingNumber = itemProgression;
-            } else {
-                stringProgression.add(Integer.toString(itemProgression));
-            }
+            stringProgression.add(Integer.toString(itemProgression));
             itemProgression += stepProgression;
         }
-        progressionAndMissingNum[0] = stringProgression.toString();
-        progressionAndMissingNum[1] = Integer.toString(missingNumber);
-        return progressionAndMissingNum;
+        return stringProgression.toString();
     }
     public static String[][] prepareData() {
         var numberOfLevels = Engine.NUMBER_OF_LEVELS;
@@ -36,12 +27,14 @@ public class Progression {
 
         for (var i = 0; i < numberOfLevels; i++) {
             var progressionSize = Utils.getRandomNum(MAX_PROGRESSION_SIZE, MIN_PROGRESSION_SIZE);
-            var indexMissingNumber = Utils.getRandomNum(progressionSize);
-            var stepProgression = Utils.getRandomNum(MAX_STEP_PROGRESSION) + 1;
+            var indexMissingNumber = Utils.getRandomNum(progressionSize - 1);
+            var stepProgression = Utils.getRandomNum(MAX_STEP_PROGRESSION, MIN_STEP_PROGRESSION);
             var itemProgression = Utils.getRandomNum(MAX_ITEM_PROGRESSION);
-            var stringProgression = gameData(progressionSize, indexMissingNumber, stepProgression, itemProgression)[0];
-            var missingNumber = gameData(progressionSize, indexMissingNumber, stepProgression, itemProgression)[1];
-            gameData[i][0] = stringProgression;
+            var progression = getProgression(progressionSize, stepProgression, itemProgression);
+            var progressionInArray = progression.split(" ");
+            var missingNumber = progressionInArray[indexMissingNumber];
+            progressionInArray[indexMissingNumber] = "..";
+            gameData[i][0] = String.join(" ", progressionInArray);
             gameData[i][1] = missingNumber;
         }
         return gameData;
